@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.form-container{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+
+    background: hsl(123, 100%, 76%);
+    padding: 64px;
+    border-radius: 32px;
+}
+.form-container-upload{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+
+    background: hwb(193 0% 18%);
+    padding: 64px;
+    border-radius: 32px;
+}
+.form-container mat-form-field{
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.margin-top{
+    margin-top: 16px;
+}
+
+.text-center{
+    text-align: center;
+}
+.content-icon{
+    padding-right: 10px;
+
+    color: #05386b;
+}
+.content{
+
+    color: #05386b;
+}
+.content-full{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 128px;
+}
+.content-background{
+    background-color: hsl(118, 100%, 50%);
+}
+.button-content{
+    background-color: #ffffff;
+    color: #edf5e1
+}
+.content-font{
+    font-family: Impact;
+    font-weight: bold;
+    font-size: 40px;
+}
+.text-font{
+    font-family: Impact;
+    font-size: 28px;
+    color: hsl(217, 46%, 40%)
+}

@@ -1,0 +1,19 @@
+<div class="form-container" mat-elevation-z5>
+    <h1 class="center text-font pink-text">LOGIN TO UPLOAD</h1>
+    <form [formGroup]="loginForm">
+      <mat-form-field>
+        <input matInput placeholder="Email address (example: name@gmail.com)" formControlName="email" [(ngModel)]="details.email" />
+        <mat-error *ngIf="email?.errors?.['required']">*required</mat-error>
+        <mat-error *ngIf="email?.errors?.['email']">*Enter correct format</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" formControlName="password" type="password" [(ngModel)]="details.password" />
+        <mat-error *ngIf="password?.errors?.['required']">*required</mat-error>
+        <mat-error *ngIf="password?.errors?.['pattern']">Password must contain at least one lowercase letter, one uppercase letter, and one number</mat-error>
+      </mat-form-field>
+      <div class="center margin-top">
+        <button mat-raised-button class="button-content pink-text" type="submit" (click)="onSubmit(email?.value,password?.value)">Login</button>
+      </div>
+    </form>
+  </div>
+  

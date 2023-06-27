@@ -1,0 +1,18 @@
+<div class="form-container-upload" mat-elevation-z6>
+  <h1 class="center text-font" role="heading" aria-level="1">File Upload</h1>
+  
+  <label for="file-upload" class="upload-label">Choose a CSV or XLSX file to load:</label>
+  <br>
+  <br>
+  <div class="upload-wrapper">
+    <input id="file-upload" type="file" accept=".csv, .xlsx" (change)="onChange($event)" #fileUpload aria-label="Upload File"/>
+    <span class="file-label">No file chosen</span>
+  </div>
+  <div class="center margin-top">
+      <button mat-raised-button class="button-content" (click)="onUpload()" type="submit">Send</button>
+  </div>
+</div>
+
+
+
+
